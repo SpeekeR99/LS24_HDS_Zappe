@@ -1,0 +1,52 @@
+i->i
+e->e
+a->a
+o->o
+u->u
+í->I
+é->E
+á->A
+ó->O
+ú->U
+ou->y
+au->Y
+eu->F
+f->f
+v->v
+s->s
+z->z
+š->S
+ž->Z
+ch->x
+h->h
+l->l
+r->r
+ř->R
+j->j
+p->p
+b->b
+t->t
+d->d
+ť->T
+ď->D
+k->k
+g->g
+m->m
+n->n
+ň->J
+c->c
+č->C
+dz->w
+dž->W
+n->N(nasal)
+m->M(nasal)
+ch->G(abyCH byl)
+ř->Q(tři)
+r->P(krk)
+l->L(vlk)
+m->H(osm)
+ráz->!
+šva->@
+dlouhá pauza->$
+krátka pauza->#
+hlasitý nádech->%

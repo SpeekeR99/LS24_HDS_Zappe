@@ -1,0 +1,241 @@
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        Pomocne symboly
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+V - samohlaska
+K - souhlaska
+ZPK - znela parova souhlaska         b d ď g v z ž h dz dž ř
+NPK - neznela parova souhlaska       p t ť k f s š ch c č ř
+JK - jedinecna souhlaska             m n ň l r j
+NP - neslabicna predlozka            k s v z
+JPZ - jednoslabicna predlozka        bez nad ob od pod před přes
+' - hlavni slovni prizvuk
+| - vnejsi predel (mezi slovy)
+- - vnitrni predel (mezislovni šev)
++ - vnitrni predel (sufixovy šev)
+# - pauza
+¬ - znelostni protejsek
+* - cokoliv
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        Základní pravidla
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+specialni hlasky
+
+ch -> ch / _
+ů -> ú / _
+y -> i / _      // Vhodne aplikovat az po vsech pravidle, ktera pracuji s mekkym i
+ý -> í / _      // Vhodne aplikovat az po vsech pravidle, ktera pracuji s mekkym i
+ostatni hlasky
+
+* -> * / _      // Not really kvuli EPA
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        Spojeni samohlasek
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+jestlize jsou dve sousedni samohlasky soucasti jedne slabiky, vyslovuji se jako dvojhlasky (diftongy)
+
+(vsechno vpravo je jako s vlnkou)
+ou -> ou / _
+au -> au / _
+eu -> eu / _
+
+profesionalnejsi mluva                                                                                           (OPTIONAL)
+
+V2 -> !V2 / <V1|, V1-> _
+(V2 je druha samohlaska, V1 je prvni samohlaska)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        Spojeni souhlasky a samohlasky
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+vyjimkou je zde [d] [t] [n] ve spojeni s [i] [ě]
+
+ě -> je / <b, p, v> _
+<d, t, n> -> <ď, ť, ň> / <i, í> _
+<dě, tě, ně, mě> -> <ďe, ťe, ňe, mě> / _
+
+ruznoslabicne spojeni souhlasky a samohlasky                                                                  (OPTIONAL)
+
+V -> !V / K| _
+V -> V / K| _
+V -> !V / K- _
+V -> V / K- _
+ZPK -> ¬ZPK / _ <|V, |!V, -!V>
+
+v pripade neslabicnych predlozek (NP) je pouziti razu nutne
+
+V -> !V / <|NP-> _          // [s!uchem] vs [s uchem]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        Vyslovnost samohlasek v okoli pauzy
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+po jakekoliv pauze se povinne vklada raz
+
+V -> !V / <#, |#> _
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        Vyslovnost souhlaskovych skupin - Asimilace znelosti
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+např. str-čit
+ve spojeni vice souhlasek prejima cela skupina souhlasek typ znelosti posledni souhlasky skupiny
+deje se tak uvnitr slov, na hranicich slov i na vnitrnim predelu
+uvnitr slova vyvolavaji asimilaci pouze parove souhlasky, na hranici slov vsak i jedinecne souhlasky, samohlasky nebo raz
+na prefixovem švu spodobu zpusobuji parove souhlasky a raz
+k asimilaci dochazi i pred pauzou (pouze znela na neznelou)
+
+ZPK -> ¬ZPK / _ <NPK, -NPK, -!, |NPK, |JK, |V, !, #>
+NPK -> ¬NPK / _ <ZPK, -ZPK, |ZPK>
+
+existuji vyjimky:
+vyslovnost skupiny sh -> slova shora, shůry a shluk (pro ne je spisovne zhora, zhůry a zhluk)
+pro ostatni vsak plati
+
+sh -> sch / _       // naschledanou, schoda (jde i nazhledanou, zhoda, tedy sh -> zh / _)
+
+dalsi vyjimka je /v/, podleha asimilaci, ale v kontextu okolnich souhlasek se chova jako jedinecna souhlaska
+
+v -> f / _ <NPK>
+NPK -> NPK / _ <v, -v, |v>
+ZPK -> ¬ZPK / _ |v
+
+dalsi vyjimka je /ř/, podleha nejen regresivni asimilaci, ale progresivni
+
+znělé ř -> neznělé ř / NPK _
+
+při asimilaci neznělého [ch] můžeme kromě znělého [h] vyslovit i znělé [ch], ale je to divny
+např. hroch dovede, abych byl
+
+dalsi vyjimkou je vyslovnost souhlasek parovych a neparovych konci-li kmen slova na znelou souhlasku a pripona
+zacina na jedinecnou souhlasku -> doporucuje se neznela vyslovnost, ale neni spatne i znela                   (OPTIONAL)
+
+ZPK -> ¬ZPK / _ +JK
+ZPK -> ZPK / _ +JK
+např (buďme, buťme; hleďme, hleťme...)
+
+dalsi vyjimka je na prefixovem nebo mezislovni švu (tj. vnitrni predel)
+jednoslabicne predlozky zakoncene znelou parovou souhlaskou (JPZ) si zachovaji znelost, nasleduje-li znela souhlaska
+nebo jedinecna souhlaska
+
+ZPK1 -> ZPK1 / JPZ _ <-ZPK2, -JK>
+např. bez masa, bes kosti; přez hory, přez řeky, přes pole
+
+neslabicne predlozky (NP) se pred parovou souhlaskou na zacatku nasledujiciho slova ridi pravidli asimilace
+s se muze vyslovovat jako [s] nebo [z], ale ve spojeni s osobnimi zajmeny je to pouze [s] -> takze furt s
+
+<z, k, v, s> -> <z, k, v, s> / | _ <-JK, -v>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        Vyslovnost souhlaskovych skupin - Asimilace artikulacni
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predodasnova hlaska [n] uvnitr slova pred [k] nebo [g] se vyslovuje jako mekkopatrova varianta [N]
+
+n -> N / _ <k, g>
+
+podobne obouretna hlaska [m] uvnitr slova pred [v] nebo [f] se vyslovuje jako retozubna varianta [M]
+
+m -> M / _ <v, f>
+(spisovna je i nezmenena vyslovnost, tedy m -> m / _ <v, f>)
+
+predodasnove hlasky [t] a [d] se MOHOU nahradit před tvrdopatrovym [ň] zmekcenymi [ť] a [ď]
+
+<t, d> -> <ť, ď> / _ <ň>                                                                                      (OPTIONAL)
+(muze zustat i normalne t a d)
+
+obdobne se muze predodasnove [n] uvnitr slova pred tvrdopatrovym [ť] a [ď] vyslovit jako zmekcene [ň]
+
+n -> ň / _ <ť, ď>                                                                                             (OPTIONAL)
+(muze zustat i normalne n)
+
+ve spojeni zaverovych hlasek [t] a [d] s uzinovou hlaskou [s] se muze vyslovit polozaverova hlaska [c]
+
+t-s -> ts / _
+t|s -> ts / _
+ts -> c / _ (OPTIONAL spise)
+ts -> ts / _
+
+obdobne se [š] -> [č]
+
+t-š -> tš / _
+t|š -> tš / _
+tš -> č / _ (OPTIONAL spise)
+tš -> tš / _
+
+obdobne se [z] a [ž] -> [tz] [tž] [dz] [dž]
+
+d-z -> dz / _
+d|z -> dz / _
+dz -> dz / _ (s vlnkou pod)
+dz -> dz / _ (bez vlnky pod)
+d-ž -> dž / _
+d|ž -> dž / _
+dž -> dž / _ (s vlnkou pod)
+dž -> dž / _ (bez vlnky pod)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        Slabikotvorne souhlasky
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[r] [l] a [m] se v oboustrannem sousedstvi s jinymi souhlaskami nebo na konci slova, predchazi-li jim souhlaska,
+vyslovuji jako slabikotvorne [P] [L] [H]
+K^(rl) oznacuje vsechny souhlasky vyjma [r] [l] [P] [L]
+
+r -> [P] / K1 _ <K2, |>
+l -> [L] / K1 _ <K2, |>
+m -> [H] / K1 _ <K2^(rl), |>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        Zjednodusena vyslovnost nektkerych souhlaskovych skupin
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+koncovka -ští (vybrat jedno)
+
+zští -> šťí / _ |
+zští -> sšťí / _ |
+žští -> šťí / _ |
+žští -> ššťí / _ |
+
+skupina hlásek [šťk] může být vyslovována jako [šťk] nebo [štk]                                               (OPTIONAL)
+např. tloušťka tlouštka
+
+ť -> t / š _ k
+ť -> ť / š _ k
+
+skupina hlásek [zdn] či [zdň] lze bez [d]                                                                     (OPTIONAL)
+např. jízdné jízné
+
+d -> d / z _ <n, ň>
+d -> ∅ / z _ <n, ň>
+
+predpona vz-, kdyz ji nasleduje retna souhlaska [b] nebo [p], je mozne zjednodusit                            (OPTIONAL)
+
+vz -> z / <|, -> _ <-b, -p>
+fs -> s / <|, -> _ <-b, -p>
+
+specialni slova: dcera, srdce -> cera a srce                                                                  (OPTIONAL)
+
+specialni slovo: býti -> byl jsem, byl sem; hráli jsme, hráli sme                                             (OPTIONAL)
+
+cislovky sedm a osm se mohou vedle slabikotvorneho m [H] vyslovovat s [u] - sedum, osum; sedH, osH            (OPTIONAL)
+
+ve slovech ctnost a egyptský je pripustna i zjednodusena vyslovnost cnost a egipskí                           (OPTIONAL)
+
+v imperativu přijď a příjďte je vedle plne formy pripustna i vyslovnost bez [j] - přiť, příťte                (OPTIONAL)
+
+ve slovech džbán a džber se připouští [dž] s vlnkou, [dž] bez vlnky a také [ž]                                (OPTIONAL)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        Vyslovnost dvou foneticky stejnych souhlasek
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+uvnitr slova je obecne mozno pouzit oba vyslovnostni tvary
+
+** -> ** / _
+** -> * / _
+
+jakoze spis neresit, pac to muze zmenit vyznam slov
+
+pri vnitrnim predelu se vyzaduje plna vyslovnost
+
+*-* -> ** / _
+
+na hranici dvou slov se striktne vyzaduje plna vyslovnost
+
+*|* -> ** / _
+
+vicemene cele (OPTIONAL), kdyz clovek nebude hrotit to prvni
