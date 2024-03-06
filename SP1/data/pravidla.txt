@@ -39,7 +39,7 @@ ou -> ou / _
 au -> au / _
 eu -> eu / _
 
-profesionalnejsi mluva                                                                                           (OPTIONAL)
+profesionalnejsi mluva                                                                                        (OPTIONAL)
 
 V2 -> !V2 / <V1|, V1-> _
 (V2 je druha samohlaska, V1 je prvni samohlaska)
@@ -51,7 +51,7 @@ vyjimkou je zde [d] [t] [n] ve spojeni s [i] [ě]
 
 ě -> je / <b, p, v> _
 <d, t, n> -> <ď, ť, ň> / <i, í> _
-<dě, tě, ně, mě> -> <ďe, ťe, ňe, mě> / _
+<dě, tě, ně, mě> -> <ďe, ťe, ňe, mňe> / _
 
 ruznoslabicne spojeni souhlasky a samohlasky                                                                  (OPTIONAL)
 
@@ -118,7 +118,7 @@ nebo jedinecna souhlaska
 ZPK1 -> ZPK1 / JPZ _ <-ZPK2, -JK>
 např. bez masa, bes kosti; přez hory, přez řeky, přes pole
 
-neslabicne predlozky (NP) se pred parovou souhlaskou na zacatku nasledujiciho slova ridi pravidli asimilace
+neslabicne predlozky (NP) se pred parovou souhlaskou na zacatku nasledujiciho slova ridi pravidly asimilace
 s se muze vyslovovat jako [s] nebo [z], ale ve spojeni s osobnimi zajmeny je to pouze [s] -> takze furt s
 
 <z, k, v, s> -> <z, k, v, s> / | _ <-JK, -v>
