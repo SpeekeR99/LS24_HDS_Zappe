@@ -32,12 +32,10 @@
     "Nic" : ["∅"]
   },
   "zakladni_pravidla" : {
-    "specialni_znaky" : {
-      "ch" : "x",
-      "ů" : "ú",
-      "y" : "i",
-      "ý" : "í"
-    },
+    "ch" : "x",
+    "ů" : "ú",
+    "y" : "i",
+    "ý" : "í",
     "á": "A",
     "é": "E",
     "í": "I",
@@ -114,7 +112,7 @@
         "ZPK v": "¬ZPK v"
       },
       {
-        "NPK Q": "NPK R"
+        "NPK R": "NPK Q"
       },
       {
         "JPZ ZPK1 -ZPK2": "JPZ ZPK1 -ZPK2",
