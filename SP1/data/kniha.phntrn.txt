@@ -114,7 +114,7 @@
 |$|g|brAJe|$|
 |$|z|Repy|$|
 |$|z|jara|$|
-|$|z|vody|$|
+|$|z|vodi|$|
 |$|k|mAmJe|$|
 |$|k|vozu|$|
 |$|v|lese|$|

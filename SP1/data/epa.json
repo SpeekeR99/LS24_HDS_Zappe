@@ -76,8 +76,8 @@
   },
   "vyslovnost_samohlasek_v_okoli_pauzy" : {
     "symbolic_rules" : {
-      "# V": "# !V",
-      "|# V": "|# !V"
+      "#|V": "#|!V",
+      "$|V": "$|!V"
     }
   },
   "asimilace_znelosti" : {
