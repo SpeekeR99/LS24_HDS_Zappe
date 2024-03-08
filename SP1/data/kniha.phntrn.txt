@@ -4,8 +4,8 @@
 |$|rUZe|$|
 |$|xata|$|
 |$|kykat|$|
-|$|Yto|$|
-|$|Fnux|$|
+|$|!Yto|$|
+|$|!Fnux|$|
 |$|tento|!obras|$|
 |$|celA|!evropa|$|
 |$|po|!objeDe|$|
