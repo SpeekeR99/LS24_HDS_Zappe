@@ -36,9 +36,9 @@
 |$|f|!okJe|$|
 |$|s|!irska|$|
 |$|!odvezL|ho|do|nemocJice|$|
-|$|Sel|sem|domU|#|!ale|Jigdo|tam|nebil|$|
+|$|Sel|jsem|domU|#|!ale|Jigdo|tam|nebil|$|
 |$|vipil|!asi|dvje|piva|$|
-|$|vipila|si|dvje|piva|$|
+|$|vipila|jsi|dvje|piva|$|
 |$|nUSki|$|
 |$|sxoda|$|
 |$|pQItel|$|

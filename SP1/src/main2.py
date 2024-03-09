@@ -1,16 +1,15 @@
 import json
 
-# TODO 2 8 7 1 ZPK -> ZPK / JPZ _ ZPK
 V = ["a", "A", "e", "E", "i", "I", "y", "Y", "o", "O", "u", "U", "y", "Y", "F"]
 K = ["b", "c", "C", "d", "D", "f", "g", "h", "x", "j", "k", "l", "m", "n", "J", "p", "r", "R", "s", "S", "t", "T", "v",
       "z", "Z", "w", "W", "N", "M", "G", "Q", "P", "L", "H"]
-Krl = ["b", "c", "C", "d", "D", "f", "g", "h", "x", "j", "k", "m", "n", "J", "p", "R", "s", "S", "t", "T", "v",
-      "z", "Z", "w", "W", "N", "M", "G", "Q", "H"] # TODO: rule "2.8.7.3"
-ZPK = ["b", "d", "D", "g", "v", "z", "Z", "h", "w", "W", "Q"]
-NPK = ["p", "t", "T", "k", "f", "s", "S", "x", "c", "C", "R"]
+Krl = ["b", "c", "C", "d", "D", "f", "g", "h", "x", "j", "k", "m", "n", "p", "R", "s", "S", "t", "T", "v",
+      "z", "Z", "w", "W", "N", "M", "G", "Q", "H"]  # TODO: ň (J) ???
+ZPK = ["b", "d", "D", "g", "v", "z", "Z", "h", "w", "W", "R"]
+NPK = ["p", "t", "T", "k", "f", "s", "S", "x", "c", "C", "Q"]
 JK = ["m", "n", "J", "l", "r", "j"]
 NP = ["k", "s", "v", "z"]
-JPZ = ["bez", "nad", "ob", "od", "pod", "pRed", "pRes"]
+JPZ = ["bez", "nad", "ob", "od", "pod", "pRed", "pQed", "pRez", "pQez"]
 
 with open("../data/rules.json", "r", encoding="utf-8") as file:
     rules = json.load(file)
@@ -18,11 +17,11 @@ with open("../data/rules.json", "r", encoding="utf-8") as file:
 print(rules)
 
 data = []
-with open("../data/kniha.ortho.txt", "r", encoding="utf-8") as file:
+with open("../data/ukazka_HDS.ortho.txt", "r", encoding="utf-8") as file:
     for line in file:
         data.append(line.lower().strip())
 answers = []
-with open("../data/kniha.phntrn.txt", "r", encoding="utf-8") as file:
+with open("../data/ukazka_HDS.phntrn.txt", "r", encoding="utf-8") as file:
     for line in file:
         answers.append(line.strip())
 
@@ -90,7 +89,7 @@ def apply_symbolic_rule(sentence, lvalue, rvalue):
             temp = []
             for krl in Krl:
                 temp.append(krl)
-            substitutions_values.append(temp)
+            substitutions.append(temp)
 
     for symbol_value in symbols_values:
         if symbol_value == "V":
@@ -133,7 +132,6 @@ def apply_symbolic_rule(sentence, lvalue, rvalue):
             for krl in Krl:
                 temp.append(krl)
             substitutions_values.append(temp)
-
     # generate all possible combinations of symbols
     import itertools
     combinations = list(itertools.product(*substitutions))
@@ -184,12 +182,13 @@ for sentence in data:
             sentence = sentence.replace(rule, rules["2.8.6"][rule])
 
     for rule in rules["2.8.7.1"]:
-        if rule == "symbolic":
-            for sym_rule in rules["2.8.7.1"][rule]:
-                sym_value = rules["2.8.7.1"][rule][sym_rule]
-                sentence = apply_symbolic_rule(sentence, sym_rule, sym_value)
-        else:
-            sentence = sentence.replace(rule, rules["2.8.7.1"][rule])
+        for i in range(5):
+            if rule == "symbolic":
+                for sym_rule in rules["2.8.7.1"][rule]:
+                    sym_value = rules["2.8.7.1"][rule][sym_rule]
+                    sentence = apply_symbolic_rule(sentence, sym_rule, sym_value)
+            else:
+                sentence = sentence.replace(rule, rules["2.8.7.1"][rule])
 
     for rule in rules["2.8.7.2"]:
         if rule == "symbolic":
