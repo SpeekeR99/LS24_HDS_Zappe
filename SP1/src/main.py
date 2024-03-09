@@ -10,15 +10,16 @@ with open("../data/rules.json", "r", encoding="utf-8") as fp:
 print(rules)
 
 data = []
-with open("../data/ukazka_HDS.ortho.txt", "r", encoding="utf-8") as file:
+with open("../data/vety_HDS.ortho.txt", "r", encoding="utf-8") as file:
     for line in file:
         data.append(line.lower().strip())
 answers = []
-with open("../data/ukazka_HDS.phntrn.txt", "r", encoding="utf-8") as file:
+with open("../data/kniha.phntrn.txt", "r", encoding="utf-8") as file:
     for line in file:
         answers.append(line.strip())
 
 correct = 0
+data = ["dcera dceřinný dceřino srdce srdečný srdíčko srdcový"]
 
 
 def apply_symbolic_rule(sentence, lvalue, rvalue):
@@ -105,12 +106,15 @@ for sentence in data:
     sentence = apply_rule(sentence, rules, "2.8.3", ignore_y_rule=False)
     sentence = apply_rule(sentence, rules, "2.8.4")
 
-    if sentence.strip() == answers[data.index(orig)].strip():
-        correct += 1
-    else:
-        print(orig)
-        print(sentence)
-        print(answers[data.index(orig)])
+    # with open("../data/vety_HDS.phntrn.txt", "a", encoding="utf-8") as fp:
+    #     fp.write(sentence + "\n")
 
-print(correct / len(data))
+    # if sentence.strip() == answers[data.index(orig)].strip():
+    #     correct += 1
+    # else:
+    #     print(orig)
+    print(sentence)
+    #     print(answers[data.index(orig)])
+
+# print(correct / len(data))
 
