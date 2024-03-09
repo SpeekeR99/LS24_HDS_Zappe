@@ -1,69 +1,116 @@
 import json
+import itertools
 
-with open("../data/epa.json", "r", encoding="utf-8") as file:
-    rules = json.load(file)
+with open("../data/epa.json", "r", encoding="utf-8") as fp:
+    epa = json.load(fp)
 
-print(list(rules.keys()))
+with open("../data/rules.json", "r", encoding="utf-8") as fp:
+    rules = json.load(fp)
+
+print(rules)
 
 data = []
-with open("../data/kniha.ortho.txt", "r", encoding="utf-8") as file:
+with open("../data/ukazka_HDS.ortho.txt", "r", encoding="utf-8") as file:
     for line in file:
         data.append(line.lower().strip())
 answers = []
-with open("../data/kniha.phntrn.txt", "r", encoding="utf-8") as file:
+with open("../data/ukazka_HDS.phntrn.txt", "r", encoding="utf-8") as file:
     for line in file:
         answers.append(line.strip())
 
 correct = 0
 
+
+def apply_symbolic_rule(sentence, lvalue, rvalue):
+    l_symbols = []
+    r_symbols = []
+    # symbols are between "<" and ">"
+    for i in range(len(lvalue)):
+        if lvalue[i] == "<":
+            start = i
+        if lvalue[i] == ">":
+            end = i
+            l_symbols.append(lvalue[start + 1:end])
+    for i in range(len(rvalue)):
+        if rvalue[i] == "<":
+            start = i
+        if rvalue[i] == ">":
+            end = i
+            r_symbols.append(rvalue[start + 1:end])
+
+    if len(l_symbols) == 0 or l_symbols[0] == "COM":
+        return sentence
+
+    # substitute symbols with possible values
+    l_subs = []
+    r_subs = []
+    for symbol in l_symbols:
+        l_subs.append(epa[symbol])
+    for symbol in r_symbols:
+        r_subs.append(epa[symbol])
+
+    # generate all possible combinations of symbols
+    l_comb = list(itertools.product(*l_subs))
+    r_comb = list(itertools.product(*r_subs))
+
+    l_subs = []
+    r_subs = []
+    for combination in l_comb:
+        temp = lvalue
+        for i in range(len(combination)):
+            # replace first occurrence of symbol with value
+            temp = temp.replace("<" + l_symbols[i] + ">", combination[i], 1)
+        l_subs.append(temp)
+    for combination in r_comb:
+        temp = rvalue
+        for i in range(len(combination)):
+            temp = temp.replace("<" + r_symbols[i] + ">", combination[i], 1)
+        r_subs.append(temp)
+
+    for i in range(len(l_subs)):
+        sentence = sentence.replace(l_subs[i], r_subs[i])
+
+    return sentence
+
+
+def apply_rule(sentence, rules, rule_name, repeat_rule=1, ignore_y_rule=True):
+    for rule in rules[rule_name]:
+        for _ in range(repeat_rule):
+            if (rule == "y" or rule == "ý") and ignore_y_rule:
+                continue
+
+            if rule == "symbolic":
+                for sym_rule in rules[rule_name][rule]:
+                    sym_value = rules[rule_name][rule][sym_rule]
+                    sentence = apply_symbolic_rule(sentence, sym_rule, sym_value)
+
+            else:
+                sentence = sentence.replace(rule, rules[rule_name][rule])
+
+    return sentence
+
+
 for sentence in data:
-    print(sentence)
+    orig = sentence
 
-    result = sentence.lower()
-    result = result.replace(" ", "|")
-    result = result.replace(",", "|#")
-    result = result.replace(".", "")
-    result = "|$|" + result + "|$|"
+    sentence = "|$|" + sentence.lower().replace(" ", "|").replace(",", "|#").replace(".", "") + "|$|"
 
-    for rule in rules["zakladni_pravidla"]:
-        if rule == "y" or rule == "ý":
-            continue
-        result = result.replace(rule, rules["zakladni_pravidla"][rule])
+    sentence = apply_rule(sentence, rules, "2.8.3")
+    sentence = apply_rule(sentence, rules, "2.8.5")
+    sentence = apply_rule(sentence, rules, "2.8.6")
+    sentence = apply_rule(sentence, rules, "2.8.7.1", repeat_rule=5)
+    sentence = apply_rule(sentence, rules, "2.8.7.2")
+    sentence = apply_rule(sentence, rules, "2.8.7.3")
+    sentence = apply_rule(sentence, rules, "2.8.7.4")
+    sentence = apply_rule(sentence, rules, "2.8.3", ignore_y_rule=False)
+    sentence = apply_rule(sentence, rules, "2.8.4")
 
-    for rule in rules["spojeni_souhlasky_a_samohlasky"]:
-        if rule == "symbolic_rules":
-            continue
-        result = result.replace(rule, rules["spojeni_souhlasky_a_samohlasky"][rule])
-
-    for rule in rules["asimilace_artikulacni"]:
-        result = result.replace(rule, rules["asimilace_artikulacni"][rule])
-
-    for rule in rules["zjendodusena_vyslovnost_souhlaskovych_skupin"]:
-        result = result.replace(rule, rules["zjendodusena_vyslovnost_souhlaskovych_skupin"][rule])
-
-    for rule in rules["zakladni_pravidla"]:
-        if rule == "y" or rule == "ý":
-            result = result.replace(rule, rules["zakladni_pravidla"][rule])
-
-    for rule in rules["spojeni_samohlasek"]:
-        result = result.replace(rule, rules["spojeni_samohlasek"][rule])
-
-    vowels_phn = rules["symbols_phn"]["V"]
-    if "$" in result:
-        index = result.index("$")
-        if result[index + 2] in vowels_phn:
-            result = result[:index + 2] + "!" + result[index + 2:]
-    if "#" in result:
-        index = result.index("#")
-        if result[index + 2] in vowels_phn:
-            result = result[:index + 2] + "!" + result[index + 2:]
-
-    # TODO: asimilace_znelosti, slabikotvorne_souhlasky
-
-    print(result)
-    print(answers[data.index(sentence)])
-
-    if result.strip() == answers[data.index(sentence)].strip():
+    if sentence.strip() == answers[data.index(orig)].strip():
         correct += 1
+    else:
+        print(orig)
+        print(sentence)
+        print(answers[data.index(orig)])
 
 print(correct / len(data))
+

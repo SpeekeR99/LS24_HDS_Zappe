@@ -26,8 +26,8 @@
     "symbolic": {
       "<V>|<V>": "<V>|!<V>",
       "<K>|<V>": "<K>|!<V>",
-      "<ZPK>|<V>": "<¬ZPK>|<V>",
-      "<ZPK>|!<V>": "<¬ZPK>|!<V>"
+      "<ZPK>|<V>": "<NPK>|<V>",
+      "<ZPK>|!<V>": "<NPK>|!<V>"
     }
   },
   "2.8.5": {
@@ -73,19 +73,19 @@
       "x|<ZPK>": "G|<ZPK>",
       "<NPK>v": "*<NPK>*v",
       "<NPK>|v": "*<NPK>*|v",
-      "<ZPK>|v": "*<¬ZPK>*|v",
+      "<ZPK>|v": "*<NPK>*|v",
       "<JPZ>|<ZPK>": "*<JPZ>*|<ZPK>",
       "<JPZ>|<JK>": "*<JPZ>*|<JK>",
-      "<ZPK><NPK>": "<¬ZPK><NPK>",
-      "<ZPK>|<NPK>": "<¬ZPK>|<NPK>",
-      "<ZPK>|<JK>": "<¬ZPK>|<JK>",
-      "<ZPK>|<V>": "<¬ZPK>|<V>",
-      "<ZPK>!": "<¬ZPK>!",
-      "<ZPK>|!": "<¬ZPK>|!",
-      "<ZPK>|#": "<¬ZPK>|#",
-      "<ZPK>|$": "<¬ZPK>|$",
-      "<NPK><ZPK>": "<¬NPK><ZPK>",
-      "<NPK>|<ZPK>": "<¬NPK>|<ZPK>",
+      "<ZPK><NPK>": "<NPK><NPK>",
+      "<ZPK>|<NPK>": "<NPK>|<NPK>",
+      "<ZPK>|<JK>": "<NPK>|<JK>",
+      "<ZPK>|<V>": "<NPK>|<V>",
+      "<ZPK>!": "<NPK>!",
+      "<ZPK>|!": "<NPK>|!",
+      "<ZPK>|#": "<NPK>|#",
+      "<ZPK>|$": "<NPK>|$",
+      "<NPK><ZPK>": "<ZPK><ZPK>",
+      "<NPK>|<ZPK>": "<ZPK>|<ZPK>",
       "v<NPK>": "f<NPK>"
     },
     "*": ""

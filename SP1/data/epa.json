@@ -1,165 +1,137 @@
 {
-  "symbols" : {
-    "V" : ["a", "á", "e", "é", "ě", "i", "í", "y", "ý", "o", "ó", "u", "ú", "ů", "ou", "au", "eu"],
-    "K" : ["b", "c", "č", "d", "ď", "f", "g", "h", "ch", "j", "k", "l", "m", "n", "ň", "p", "q", "r", "ř", "s", "š", "t", "ť", "v", "w", "x", "z", "ž"],
-    "ZPK" : ["b", "d", "ď", "g", "v", "z", "ž", "h", "dz", "dž", "ř"],
-    "NPK" : ["p", "t", "ť", "k", "f", "s", "š", "ch", "c", "č", "ř"],
-    "JK" : ["m", "n", "ň", "l", "r", "j"],
-    "NP" : ["k", "s", "v", "z"],
-    "JPZ" : ["bez", "nad", "ob", "od", "pod", "před", "přes"],
-    "Prizvuk" : ["'"],
-    "Vnejsi predel" : ["|"],
-    "Vnitrni predel" : ["-", "+"],
-    "Pauza" : ["$", "#"],
-    "Znelostni protejsek" : ["¬"],
-    "Cokoliv" : ["*"],
-    "Nic" : ["∅"]
-  },
-  "symbols_phn" : {
-    "V" : ["a", "A", "e", "E", "i", "I", "y", "Y", "o", "O", "u", "U", "y", "Y", "F"],
-    "K" : ["b", "c", "C", "d", "D", "f", "g", "h", "x", "j", "k", "l", "m", "n", "J", "p", "r", "R", "s", "S", "t", "T", "v", "z", "Z", "w", "W", "N", "M", "G", "Q", "P", "L", "H"],
-    "ZPK": ["b", "d", "D", "g", "v", "z", "Z", "h", "w", "W", "Q"],
-    "NPK": ["p", "t", "T", "k", "f", "s", "S", "x", "c", "C", "R"],
-    "JK" : ["m", "n", "J", "l", "r", "j"],
-    "NP" : ["k", "s", "v", "z"],
-    "JPZ" : ["bez", "nad", "ob", "od", "pod", "pRed", "pRes"],
-    "Prizvuk" : ["'"],
-    "Vnejsi predel" : ["|"],
-    "Vnitrni predel" : ["-", "+"],
-    "Pauza" : ["$", "#"],
-    "Znelostni protejsek" : ["¬"],
-    "Cokoliv" : ["*"],
-    "Nic" : ["∅"]
-  },
-  "zakladni_pravidla" : {
-    "ch" : "x",
-    "ů" : "ú",
-    "y" : "i",
-    "ý" : "í",
-    "á": "A",
-    "é": "E",
-    "í": "I",
-    "ó": "O",
-    "ú": "U",
-    "č": "C",
-    "ď": "D",
-    "ň": "J",
-    "ř": "R",
-    "š": "S",
-    "ť": "T",
-    "ž": "Z",
-    "dz": "w",
-    "dž": "W"
-  },
-  "spojeni_samohlasek" : {
-    "ou": "y",
-    "au": "Y",
-    "eu": "F"
-  },
-  "spojeni_souhlasky_a_samohlasky" : {
-    "bě": "bje",
-    "pě": "pje",
-    "vě": "vje",
-    "di": "Di",
-    "ti": "Ti",
-    "ni": "Ji",
-    "dí": "Dí",
-    "tí": "Tí",
-    "ní": "Jí",
-    "dě": "De",
-    "tě": "Te",
-    "ně": "Je",
-    "mě": "mJe",
-    "symbolic_rules" : {
-      "|NP V" : "|NP !V"
-    }
-  },
-  "vyslovnost_samohlasek_v_okoli_pauzy" : {
-    "symbolic_rules" : {
-      "#|V": "#|!V",
-      "$|V": "$|!V"
-    }
-  },
-  "asimilace_znelosti" : {
-    "symbolic_rules" : {
-      "ZPK NPK": "¬ZPK",
-      "ZPK -NPK": "¬ZPK",
-      "ZPK -!": "¬ZPK",
-      "ZPK |NPK": "¬ZPK",
-      "ZPK |JK": "¬ZPK",
-      "ZPK |V": "¬ZPK",
-      "ZPK !": "¬ZPK",
-      "ZPK #": "¬ZPK",
-      "NPK ZPK": "¬NPK",
-      "NPK -ZPK": "¬NPK",
-      "NPK |ZPK": "¬NPK"
-    },
-    "exceptions" : [
-      {
-        "shora": "zhora",
-        "shůry": "zhůry",
-        "shUry": "zhUry",
-        "shluk": "zhluk"
-      },
-      {
-        "sh": "sch"
-      },
-      {
-        "v NPK": "f NPK",
-        "NPK v": "NPK v",
-        "NPK -v": "NPK -v",
-        "NPK |v": "NPK |v",
-        "ZPK v": "¬ZPK v"
-      },
-      {
-        "NPK R": "NPK Q"
-      },
-      {
-        "JPZ ZPK1 -ZPK2": "JPZ ZPK1 -ZPK2",
-        "JPZ ZPK1 -JK": "JPZ ZPK1 -JK"
-      },
-      {
-        "z -JK": "z -JK",
-        "z -v": "z -v",
-        "k -JK": "k -JK",
-        "k -v": "k -v",
-        "v -JK": "v -JK",
-        "v -v": "v -v",
-        "s -JK": "s -JK",
-        "s -v": "s -v"
-      }
-    ]
-  },
-  "asimilace_artikulacni" : {
-    "nk": "Nk",
-    "ng": "Nk",
-    "mv": "Mv",
-    "mf": "Mf",
-    "t-s": "ts",
-    "t|s": "ts",
-    "t-š": "tS",
-    "t|š": "tS",
-    "d-z": "dz",
-    "d|z": "dz",
-    "dz": "w",
-    "d-ž": "dZ",
-    "d|ž": "dZ",
-    "dž": "W"
-  },
-  "slabikotvorne_souhlasky" : {
-    "symbolic_rules" : {
-      "K1 r K2": "K1 P K2",
-      "K1 r |": "K1 P |",
-      "K1 l K2": "K1 L K2",
-      "K1 l |": "K1 L |",
-      "K1 m K2": "K1 H K2(rl)",
-      "K1 m |": "K1 H |"
-    }
-  },
-  "zjendodusena_vyslovnost_souhlaskovych_skupin" : {
-    "zští": "ští",
-    "žští": "ští",
-    "zSTI": "STI",
-    "ZSTI": "STI"
-  }
+  "V": [
+    "a",
+    "A",
+    "e",
+    "E",
+    "i",
+    "I",
+    "y",
+    "Y",
+    "o",
+    "O",
+    "u",
+    "U",
+    "y",
+    "Y",
+    "F"
+  ],
+  "K": [
+    "b",
+    "c",
+    "C",
+    "d",
+    "D",
+    "f",
+    "g",
+    "h",
+    "x",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "J",
+    "p",
+    "r",
+    "R",
+    "s",
+    "S",
+    "t",
+    "T",
+    "v",
+    "z",
+    "Z",
+    "w",
+    "W",
+    "N",
+    "M",
+    "G",
+    "Q",
+    "P",
+    "L",
+    "H"
+  ],
+  "Krl": [
+    "b",
+    "c",
+    "C",
+    "d",
+    "D",
+    "f",
+    "g",
+    "h",
+    "x",
+    "j",
+    "k",
+    "m",
+    "n",
+    "p",
+    "R",
+    "s",
+    "S",
+    "t",
+    "T",
+    "v",
+    "z",
+    "Z",
+    "w",
+    "W",
+    "N",
+    "M",
+    "G",
+    "Q",
+    "H"
+  ],
+  "ZPK": [
+    "b",
+    "d",
+    "D",
+    "g",
+    "v",
+    "z",
+    "Z",
+    "h",
+    "w",
+    "W",
+    "R"
+  ],
+  "NPK": [
+    "p",
+    "t",
+    "T",
+    "k",
+    "f",
+    "s",
+    "S",
+    "x",
+    "c",
+    "C",
+    "Q"
+  ],
+  "JK": [
+    "m",
+    "n",
+    "J",
+    "l",
+    "r",
+    "j"
+  ],
+  "NP": [
+    "k",
+    "s",
+    "v",
+    "z"
+  ],
+  "JPZ": [
+    "bez",
+    "nad",
+    "ob",
+    "od",
+    "pod",
+    "pRed",
+    "pQed",
+    "pRez",
+    "pQez"
+  ]
 }
