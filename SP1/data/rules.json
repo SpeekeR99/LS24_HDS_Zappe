@@ -9,6 +9,8 @@
     "^": "!"
   },
   "2.8.3": {
+    "x": "ks",
+    "q": "kv",
     "ch": "x",
     "ů": "ú",
     "y": "i",
@@ -95,7 +97,8 @@
       "<ZPK>|$": "<NPK>|$",
       "<NPK><ZPK>": "<ZPK><ZPK>",
       "<NPK>|<ZPK>": "<ZPK>|<ZPK>",
-      "v<NPK>": "f<NPK>"
+      "v<NPK>": "f<NPK>",
+      "G|<NPK>": "x|<NPK>"
     },
     "*": ""
   },
@@ -113,9 +116,11 @@
       "<K>r|": "<K>P|",
       "<K>l<K>": "<K>L<K>",
       "<K>l|": "<K>L|",
-      "<K>m<Krl>": "<K>H<Krl>",
-      "<K>m|": "<K>H|"
-    }
+      "sedm<Krl>": "sedH<Krl>",
+      "osm<Krl>": "osH<Krl>"
+    },
+    "sedm|": "sedH|",
+    "osm|": "osH|"
   },
   "2.8.7.4": {
     "zští": "ští",
