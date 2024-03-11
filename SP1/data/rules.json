@@ -1,4 +1,13 @@
 {
+  "basic": {
+    " ": "|",
+    ",": "|#",
+    ".": "",
+    "?": "",
+    "!": "",
+    ":": "",
+    "^": "!"
+  },
   "2.8.3": {
     "ch": "x",
     "ů": "ú",
@@ -64,8 +73,8 @@
     "shUry": "zhUry",
     "shluk": "zhluk",
     "sh": "sx",
-    "pRes": "pRez",
-    "pQes": "pQez",
+    "|pRes|": "|pRez|",
+    "|pQes|": "|pQez|",
     "symbolic": {
       "<NPK>R": "<NPK>Q",
       "|<NP>|<JK>": "|*<NP>*|<JK>",
@@ -74,8 +83,8 @@
       "<NPK>v": "*<NPK>*v",
       "<NPK>|v": "*<NPK>*|v",
       "<ZPK>|v": "*<NPK>*|v",
-      "<JPZ>|<ZPK>": "*<JPZ>*|<ZPK>",
-      "<JPZ>|<JK>": "*<JPZ>*|<JK>",
+      "|<JPZ>|<ZPK>": "|*<JPZ>*|<ZPK>",
+      "|<JPZ>|<JK>": "|*<JPZ>*|<JK>",
       "<ZPK><NPK>": "<NPK><NPK>",
       "<ZPK>|<NPK>": "<NPK>|<NPK>",
       "<ZPK>|<JK>": "<NPK>|<JK>",
