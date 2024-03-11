@@ -10,7 +10,7 @@
     "^": "!",
     "symbolic": {
       "|<FOREIGN>|": "|<CZENGLISH>|",
-      "<COM> zdroj cizich slov (symboly <FOREIGN> a <CZENGLISH>)": "dodana kniha \"Mluvime s počítačem česky\"",
+      "<COM> zdroj cizich slov (symboly <FOREIGN> a <CZENGLISH>)": "dodana kniha \"Mluvime s počítačem česky\""
     }
   },
   "2.8.3.1": {
