@@ -74,31 +74,31 @@ def main(input_path=INPUT_FP, output_path=OUTPUT_FP):
         for sentence in phntrn:
             fp.write(sentence + "\n")
 
-    print("Phonetically transcribed sentences saved to " + output_path)
+    print(f"Phonetically transcribed sentences saved to {output_path}")
 
 
 if __name__ == "__main__":
     if len(sys.argv) == 1:  # No arguments
         print("Using default file paths...")
-        print("\t - EPA: " + EPA_FP)
-        print("\t - Rules: " + RULES_FP)
-        print("\t - Input: " + INPUT_FP)
-        print("\t - Output: " + OUTPUT_FP)
+        print(f"\t - EPA: {EPA_FP}")
+        print(f"\t - Rules: {RULES_FP}")
+        print(f"\t - Input: {INPUT_FP}")
+        print(f"\t - Output: {OUTPUT_FP}")
         main()
     elif len(sys.argv) == 3:  # Two arguments
         print("Using specified file paths...")
-        print("\t - EPA: " + EPA_FP)
-        print("\t - Rules: " + RULES_FP)
-        print("\t - Input: " + sys.argv[1])
-        print("\t - Output: " + sys.argv[2])
+        print(f"\t - EPA: {EPA_FP}")
+        print(f"\t - Rules: {RULES_FP}")
+        print(f"\t - Input: {sys.argv[1]}")
+        print(f"\t - Output: {sys.argv[2]}")
         main(input_path=sys.argv[1], output_path=sys.argv[2])
     else:  # Anything else
         print("Invalid number of arguments!")
-        print("Usage: python " + sys.argv[0])
-        print("Usage: python " + sys.argv[0] + " <input_file> <output_file>")
+        print(f"Usage: python {sys.argv[0]}")
+        print(f"Usage: python {sys.argv[0]} <input_file> <output_file>")
         print("\t - <input_file>: File path to orthographic sentences")
         print("\t - <output_file>: File path to save phonetically transcribed sentences to")
         print("\t - If no arguments are given, default file paths are used")
-        print("\t   (" + INPUT_FP + " and " + OUTPUT_FP + ")")
+        print(f"\t   ({INPUT_FP} and {OUTPUT_FP})")
         print("Exiting...")
         sys.exit(377813111)
