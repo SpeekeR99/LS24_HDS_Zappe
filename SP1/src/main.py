@@ -51,7 +51,7 @@ def main(input_path=INPUT_FP, output_path=OUTPUT_FP):
         sentence = "|$|" + sentence.lower() + "|$|"
 
         # Apply all the rules
-        sentence, _ = apply_rule(sentence, epa, rules, "basic")
+        sentence, _ = apply_rule(sentence, epa, rules, "preprocess")
         sentence, _ = apply_rule(sentence, epa, rules, "2.8.3.1")
         sentence, _ = apply_rule(sentence, epa, rules, "2.8.9.2")
         sentence, _ = apply_rule(sentence, epa, rules, "2.8.3.2")
