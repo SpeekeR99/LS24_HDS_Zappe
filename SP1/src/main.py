@@ -95,4 +95,7 @@ if __name__ == "__main__":
         print("Usage: python " + sys.argv[0] + " <input_file> <output_file>")
         print("\t - <input_file>: File path to orthographic sentences")
         print("\t - <output_file>: File path to save phonetically transcribed sentences to")
+        print("\t - If no arguments are given, default file paths are used")
+        print("\t   (" + INPUT_FP + " and " + OUTPUT_FP + ")")
+        print("Exiting...")
         sys.exit(1)
