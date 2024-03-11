@@ -1,7 +1,7 @@
 import itertools
 
 
-def apply_rule(sentence, epa, rules, rule_name, ignore_y_rule=True, ignore_x_rule=False):
+def apply_rule(sentence, epa, rules, rule_name):
     """
     Applies a rule to a sentence
     :param sentence: Sentence to apply the rule to
@@ -9,17 +9,11 @@ def apply_rule(sentence, epa, rules, rule_name, ignore_y_rule=True, ignore_x_rul
     :param rules: Rules dictionary from rules.json
     :param rule_name: Rule to apply
     :param ignore_y_rule: Special case for rule 2.8.3
-    :param ignore_x_rule: Special case for rule 2.8.3
     :return: Changed sentence and whether the sentence was changed by the rule or not
     """
     original = sentence
 
     for rule in rules[rule_name]:  # For each rule in the set of rules
-        if (rule == "y" or rule == "ý") and ignore_y_rule:  # Special case for rule 2.8.3
-            continue
-        if rule == "x" and ignore_x_rule:  # Special case for rule 2.8.3
-            continue
-
         if rule == "symbolic":  # Special case of symbolic rules
             for sym_rule in rules[rule_name][rule]:  # For each symbolic rule in the set of symbolic rules
                 sym_value = rules[rule_name][rule][sym_rule]

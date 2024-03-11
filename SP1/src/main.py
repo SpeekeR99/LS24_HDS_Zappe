@@ -52,7 +52,9 @@ def main(input_path=INPUT_FP, output_path=OUTPUT_FP):
 
         # Apply all the rules
         sentence, _ = apply_rule(sentence, epa, rules, "basic")
-        sentence, _ = apply_rule(sentence, epa, rules, "2.8.3")
+        sentence, _ = apply_rule(sentence, epa, rules, "2.8.3.1")
+        sentence, _ = apply_rule(sentence, epa, rules, "2.8.9.2")
+        sentence, _ = apply_rule(sentence, epa, rules, "2.8.3.2")
         sentence, _ = apply_rule(sentence, epa, rules, "2.8.5")
         sentence, _ = apply_rule(sentence, epa, rules, "2.8.6")
         sentence, changed = apply_rule(sentence, epa, rules, "2.8.7.1")
@@ -60,9 +62,10 @@ def main(input_path=INPUT_FP, output_path=OUTPUT_FP):
             sentence, changed = apply_rule(sentence, epa, rules, "2.8.7.1")
         sentence, _ = apply_rule(sentence, epa, rules, "2.8.7.2")
         sentence, _ = apply_rule(sentence, epa, rules, "2.8.7.3")
+        sentence, _ = apply_rule(sentence, epa, rules, "2.8.3.3")
         sentence, _ = apply_rule(sentence, epa, rules, "2.8.7.4")
-        sentence, _ = apply_rule(sentence, epa, rules, "2.8.3", ignore_y_rule=False, ignore_x_rule=True)
         sentence, _ = apply_rule(sentence, epa, rules, "2.8.4")
+        sentence, _ = apply_rule(sentence, epa, rules, "2.8.9.1")
 
         phntrn.append(sentence)
 
@@ -98,4 +101,4 @@ if __name__ == "__main__":
         print("\t - If no arguments are given, default file paths are used")
         print("\t   (" + INPUT_FP + " and " + OUTPUT_FP + ")")
         print("Exiting...")
-        sys.exit(1)
+        sys.exit(377813111)

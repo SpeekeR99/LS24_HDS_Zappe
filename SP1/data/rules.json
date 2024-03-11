@@ -6,15 +6,11 @@
     "?": "",
     "!": "",
     ":": "",
+    "-": "",
     "^": "!"
   },
-  "2.8.3": {
-    "x": "ks",
-    "q": "kv",
-    "ch": "x",
+  "2.8.3.1": {
     "ů": "ú",
-    "y": "i",
-    "ý": "I",
     "á": "A",
     "é": "E",
     "í": "I",
@@ -26,9 +22,16 @@
     "ř": "R",
     "š": "S",
     "ť": "T",
-    "ž": "Z",
+    "ž": "Z"
+  },
+  "2.8.3.2": {
+    "ch": "x",
     "dz": "w",
     "dž": "W"
+  },
+  "2.8.3.3": {
+    "y": "i",
+    "ý": "I"
   },
   "2.8.4": {
     "ou": "y",
@@ -38,7 +41,8 @@
       "<V>|<V>": "<V>|!<V>",
       "<K>|<V>": "<K>|!<V>",
       "<ZPK>|<V>": "<NPK>|<V>",
-      "<ZPK>|!<V>": "<NPK>|!<V>"
+      "<ZPK>|!<V>": "<NPK>|!<V>",
+      "<ZPK>!<V>": "<NPK>!<V>"
     }
   },
   "2.8.5": {
@@ -127,8 +131,48 @@
     "žští": "ští",
     "zSTI": "STI",
     "ZSTI": "STI",
+    "zdn": "zn",
+    "zdJ": "zJ",
     "sPtc": "sPc",
     "tcer": "cer",
-    "tceR": "ceR"
+    "tceR": "ceR",
+    "ctnost": "cnost",
+    "egyptskI": "egipskI",
+    "egiptskI": "egipskI",
+    "anna": "ana"
+  },
+  "2.8.9.1": {
+    "symbolic": {
+      "i<V>": "ij<V>",
+      "<V>i": "<V>j"
+    }
+  },
+  "2.8.9.2": {
+    "w": "v",
+    "q": "kv",
+    "symbolic": {
+      "|ex<ZPK>": "|egz<ZPK>",
+      "|ex<V>": "|egz<V>",
+      "|ex<NPK>": "|eks<NPK>",
+      "|ex<JK>": "|eks<JK>",
+      "|neex<ZPK>": "|neegz<ZPK>",
+      "|neex<V>": "|neegz<V>",
+      "|neex<NPK>": "|neeks<NPK>",
+      "|neex<JK>": "|neeks<JK>",
+      "|koex<ZPK>": "|koegz<ZPK>",
+      "|koex<V>": "|koegz<V>",
+      "|koex<NPK>": "|koeks<NPK>",
+      "|koex<JK>": "|koeks<JK>",
+      "x<NPK>": "ks<NPK>",
+      "x|<NPK>": "ks|<NPK>",
+      "x|<JK>": "ks|<JK>",
+      "x|<V>": "ks|<V>",
+      "x|<ZPK>": "gz|<ZPK>",
+      "<V>x<V>": "<V>ks<V>",
+      "|x<V>": "|ks<V>"
+    },
+    "x|!": "ks|!",
+    "x|#": "ks|#",
+    "x|$": "ks|$"
   }
 }
