@@ -9,7 +9,7 @@
     "-": "",
     "^": "!",
     "symbolic": {
-      "|<FOREIGN>|": "|<CZENGLISH>|",
+      "<FOREIGN>": "<CZENGLISH>",
       "<COM> zdroj cizich slov (symboly <FOREIGN> a <CZENGLISH>)": "dodana kniha \"Mluvime s počítačem česky\""
     }
   },
@@ -42,11 +42,7 @@
     "au": "Y",
     "eu": "F",
     "symbolic": {
-      "<V>|<V>": "<V>|!<V>",
-      "<K>|<V>": "<K>|!<V>",
-      "<ZPK>|<V>": "<NPK>|<V>",
-      "<ZPK>|!<V>": "<NPK>|!<V>",
-      "<ZPK>!<V>": "<NPK>!<V>"
+      "<V>|<V>": "<V>|!<V>"
     }
   },
   "2.8.5": {
@@ -68,6 +64,10 @@
     "ně": "Je",
     "mě": "mJe",
     "symbolic": {
+      "<K>|<V>": "<K>|!<V>",
+      "<ZPK>|<V>": "<NPK>|<V>",
+      "<ZPK>|!<V>": "<NPK>|!<V>",
+      "<ZPK>!<V>": "<NPK>!<V>",
       "<NP>|<V>": "<NP>|!<V>"
     }
   },
@@ -131,8 +131,6 @@
     "osm|": "osH|"
   },
   "2.8.7.4": {
-    "zští": "ští",
-    "žští": "ští",
     "zSTI": "STI",
     "ZSTI": "STI",
     "zdn": "zn",
