@@ -119,7 +119,11 @@
     "nk": "Nk",
     "ng": "Ng",
     "mv": "Mv",
-    "mf": "Mf"
+    "mf": "Mf",
+    "t|s": "ts",
+    "t|S": "tS",
+    "d|z": "dz",
+    "d|Z": "dZ"
   },
   "2.8.7.3": {
     "symbolic": {
