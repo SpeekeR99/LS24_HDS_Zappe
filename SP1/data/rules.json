@@ -150,12 +150,6 @@
     "egiptsk": "egipsk",
     "anna": "ana"
   },
-  "2.8.9.1": {
-    "symbolic": {
-      "i<V>": "ij<V>",
-      "<V>i": "<V>j"
-    }
-  },
   "2.8.9.2": {
     "w": "v",
     "q": "kv",

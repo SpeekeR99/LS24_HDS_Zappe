@@ -65,7 +65,6 @@ def main(input_path=INPUT_FP, output_path=OUTPUT_FP):
         sentence, _ = apply_rule(sentence, epa, rules, "2.8.3.3")
         sentence, _ = apply_rule(sentence, epa, rules, "2.8.7.4")
         sentence, _ = apply_rule(sentence, epa, rules, "2.8.4")
-        sentence, _ = apply_rule(sentence, epa, rules, "2.8.9.1")
 
         phntrn.append(sentence)
 
