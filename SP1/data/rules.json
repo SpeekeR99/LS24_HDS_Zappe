@@ -1,13 +1,14 @@
 {
   "preprocess": {
     " ": "|",
+    " ": "|",
     ",": "|#",
     ".": "",
     "?": "",
     "!": "",
     ":": "",
     "-": "",
-    "^": "!",
+    "\"": "",
     "symbolic": {
       "<FOREIGN>": "<CZENGLISH>",
       "<COM> zdroj cizich slov (symboly <FOREIGN> a <CZENGLISH>)": "dodana kniha \"Mluvime s počítačem česky\""
@@ -35,7 +36,7 @@
       "|<PREFIX_D>ž": "|<PREFIX_D>*ž"
     },
     "dz": "w",
-    "dž": "W",
+    "dZ": "W",
     "*": ""
   },
   "2.8.3.3": {
@@ -48,7 +49,8 @@
     "eu": "F",
     "symbolic": {
       "<V>|<V>": "<V>|!<V>"
-    }
+    },
+    "^": "!"
   },
   "2.8.5": {
     "bě": "bje",
@@ -92,19 +94,39 @@
     "|pQes|": "|pQez|",
     "symbolic": {
       "<NPK>R": "<NPK>Q",
-      "|<NP>|<JK>": "|*<NP>*|<JK>",
-      "|<NP>|v": "|*<NP>*|v",
+      "|<NP>|<JK>": "|<NP>*|<JK>",
+      "|<NP>|v": "|<NP>*|v",
       "x|<ZPK>": "G|<ZPK>",
-      "<NPK>v": "*<NPK>*v",
-      "<NPK>|v": "*<NPK>*|v",
-      "<ZPK>|v": "*<NPK>*|v",
-      "|<JPZ>|<ZPK>": "|*<JPZ>*|<ZPK>",
-      "|<JPZ>|<JK>": "|*<JPZ>*|<JK>",
+      "<NPK>v": "<NPK>*v",
+      "<NPK>|v": "<NPK>*|v",
+      "<ZPK>|v": "<NPK>*|v",
+      "|bez|<ZPK>": "|be*z*|<ZPK>",
+      "|bez|<JK>": "|be*z*|<JK>",
+      "|nad|<ZPK>": "|na*d*|<ZPK>",
+      "|nad|<JK>": "|na*d*|<JK>",
+      "|ob|<ZPK>": "|o*b*|<ZPK>",
+      "|!ob|<ZPK>": "|!o*b*|<ZPK>",
+      "|ob|<JK>": "|o*b*|<JK>",
+      "|!ob|<JK>": "|!o*b*|<JK>",
+      "|od|<ZPK>": "|o*d*|<ZPK>",
+      "|!od|<ZPK>": "|!o*d*|<ZPK>",
+      "|od|<JK>": "|o*d*|<JK>",
+      "|!od|<JK>": "|!o*d*|<JK>",
+      "|pod|<ZPK>": "|po*d*|<ZPK>",
+      "|pod|<JK>": "|po*d*|<JK>",
+      "|pRed|<ZPK>": "|pRe*d*|<ZPK>",
+      "|pRed|<JK>": "|pRe*d*|<JK>",
+      "|pQed|<ZPK>": "|pQe*d*|<ZPK>",
+      "|pQed|<JK>": "|pQe*d*|<JK>",
+      "|pRez|<ZPK>": "|pRe*z*|<ZPK>",
+      "|pRez|<JK>": "|pRe*z*|<JK>",
+      "|pQez|<ZPK>": "|pQe*z*|<ZPK>",
+      "|pQez|<JK>": "|pQe*z*|<JK>",
       "<ZPK><NPK>": "<NPK><NPK>",
+      "<ZPK>!": "<NPK>!",
       "<ZPK>|<NPK>": "<NPK>|<NPK>",
       "<ZPK>|<JK>": "<NPK>|<JK>",
       "<ZPK>|<V>": "<NPK>|<V>",
-      "<ZPK>!": "<NPK>!",
       "<ZPK>|!": "<NPK>|!",
       "<ZPK>|#": "<NPK>|#",
       "<ZPK>|$": "<NPK>|$",
@@ -146,6 +168,7 @@
     "tcer": "cer",
     "tceR": "ceR",
     "ctnost": "cnost",
+    "ctnosT": "cnosT",
     "egyptsk": "egipsk",
     "egiptsk": "egipsk",
     "anna": "ana"

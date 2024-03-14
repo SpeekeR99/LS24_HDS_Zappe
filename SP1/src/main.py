@@ -51,20 +51,18 @@ def main(input_path=INPUT_FP, output_path=OUTPUT_FP):
         sentence = "|$|" + sentence.lower() + "|$|"
 
         # Apply all the rules
-        sentence, _ = apply_rule(sentence, epa, rules, "preprocess")
-        sentence, _ = apply_rule(sentence, epa, rules, "2.8.3.1")
-        sentence, _ = apply_rule(sentence, epa, rules, "2.8.9.2")
-        sentence, _ = apply_rule(sentence, epa, rules, "2.8.3.2")
-        sentence, _ = apply_rule(sentence, epa, rules, "2.8.5")
-        sentence, _ = apply_rule(sentence, epa, rules, "2.8.6")
-        sentence, changed = apply_rule(sentence, epa, rules, "2.8.7.1")
-        while changed:  # Keep applying the assimilation rule until it does not change the sentence anymore
-            sentence, changed = apply_rule(sentence, epa, rules, "2.8.7.1")
-        sentence, _ = apply_rule(sentence, epa, rules, "2.8.7.2")
-        sentence, _ = apply_rule(sentence, epa, rules, "2.8.7.3")
-        sentence, _ = apply_rule(sentence, epa, rules, "2.8.3.3")
-        sentence, _ = apply_rule(sentence, epa, rules, "2.8.7.4")
-        sentence, _ = apply_rule(sentence, epa, rules, "2.8.4")
+        sentence = apply_rule(sentence, epa, rules, "preprocess")
+        sentence = apply_rule(sentence, epa, rules, "2.8.3.1")
+        sentence = apply_rule(sentence, epa, rules, "2.8.9.2")
+        sentence = apply_rule(sentence, epa, rules, "2.8.3.2")
+        sentence = apply_rule(sentence, epa, rules, "2.8.5")
+        sentence = apply_rule(sentence, epa, rules, "2.8.6")
+        sentence = apply_rule(sentence, epa, rules, "2.8.7.1")
+        sentence = apply_rule(sentence, epa, rules, "2.8.7.2")
+        sentence = apply_rule(sentence, epa, rules, "2.8.7.3")
+        sentence = apply_rule(sentence, epa, rules, "2.8.3.3")
+        sentence = apply_rule(sentence, epa, rules, "2.8.7.4")
+        sentence = apply_rule(sentence, epa, rules, "2.8.4")
 
         phntrn.append(sentence)
 

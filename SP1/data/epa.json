@@ -111,10 +111,15 @@
   ],
   "JK": [
     "m",
+    "M",
+    "H",
     "n",
+    "N",
     "J",
     "l",
+    "L",
     "r",
+    "P",
     "j"
   ],
   "NP": [
@@ -324,7 +329,7 @@
     "prémio",
     "bio",
     "médi",
-    "medi",
+    "mediá",
     "kyanid",
     "hyen",
     "alois",
@@ -343,7 +348,17 @@
     "werner",
     "twist",
     "quido",
-    "textil"
+    "textil",
+    "titul",
+    "efektiv",
+    "univerz",
+    "ad hoc",
+    "techni",
+    "prostitu",
+    "display",
+    "error",
+    "feminist",
+    "rock"
   ],
   "CZENGLISH": [
     "honóris kauzá",
@@ -372,7 +387,7 @@
     "prémijo",
     "bijo",
     "médyj",
-    "medyj",
+    "medyjá",
     "kijanyt",
     "hijen",
     "alojs",
@@ -391,6 +406,16 @@
     "verner",
     "tvist",
     "kvído",
-    "tekstyl"
+    "tekstyl",
+    "tytul",
+    "efektyv",
+    "unyverz",
+    "ad hók",
+    "techny",
+    "prostytu",
+    "dysplej",
+    "eror",
+    "feminyst",
+    "rok"
   ]
 }

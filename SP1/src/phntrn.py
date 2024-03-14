@@ -8,23 +8,24 @@ def apply_rule(sentence, epa, rules, rule_name):
     :param epa: EPA dictionary from epa.json
     :param rules: Rules dictionary from rules.json
     :param rule_name: Rule to apply
-    :param ignore_y_rule: Special case for rule 2.8.3
-    :return: Changed sentence and whether the sentence was changed by the rule or not
+    :return: Changed sentence
     """
-    original = sentence
+    while True:
+        original = sentence
 
-    for rule in rules[rule_name]:  # For each rule in the set of rules
-        if rule == "symbolic":  # Special case of symbolic rules
-            for sym_rule in rules[rule_name][rule]:  # For each symbolic rule in the set of symbolic rules
-                sym_value = rules[rule_name][rule][sym_rule]
-                sentence = _apply_symbolic_rule(sentence, sym_rule, sym_value, epa)
+        for rule in rules[rule_name]:  # For each rule in the set of rules
+            if rule == "symbolic":  # Special case of symbolic rules
+                for sym_rule in rules[rule_name][rule]:  # For each symbolic rule in the set of symbolic rules
+                    sym_value = rules[rule_name][rule][sym_rule]
+                    sentence = _apply_symbolic_rule(sentence, sym_rule, sym_value, epa)
 
-        else:  # Normal rules
-            sentence = sentence.replace(rule, rules[rule_name][rule])
+            else:  # Normal rules
+                sentence = sentence.replace(rule, rules[rule_name][rule])
 
-    # Check if the sentence was changed and return the changed sentence with a boolean
-    changed = sentence != original
-    return sentence, changed
+        if sentence == original:
+            break
+
+    return sentence
 
 
 def _apply_symbolic_rule(sentence, lvalue, rvalue, epa):
