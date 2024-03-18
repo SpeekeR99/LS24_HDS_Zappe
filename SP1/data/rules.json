@@ -9,6 +9,9 @@
     ":": "",
     "-": "",
     "\"": "",
+    "'": "",
+    "(": "",
+    ")": "",
     "symbolic": {
       "<FOREIGN>": "<CZENGLISH>",
       "<COM> zdroj cizich slov (symboly <FOREIGN> a <CZENGLISH>)": "dodana kniha \"Mluvime s počítačem česky\""
