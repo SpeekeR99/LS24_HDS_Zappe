@@ -47,7 +47,7 @@
 |$|hoQkI|$|
 |$|lof|medvjedU|$|
 |$|keQ|roste|$|
-|$|sjestskonCil|$|
+|$|sjest|skonCil|$|
 |$|vlag|dojel|$|
 |$|hlaz|Zeni|$|
 |$|tog|Rek|$|
@@ -102,7 +102,7 @@
 |$|bez|masa|$|
 |$|nad|Reky|$|
 |$|bes|kosTI|$|
-|$|potstromem|$|
+|$|pot|stromem|$|
 |$|pQez|hori|$|
 |$|pQez|jezero|$|
 |$|pQez|Reku|$|

@@ -303,8 +303,8 @@
     "pQed"
   ],
   "FOREIGN": [
-    "honoris causa",
-    "enfant terrible",
+    "honoris|causa",
+    "enfant|terrible",
     "comeback",
     "football",
     "offside",
@@ -352,7 +352,7 @@
     "titul",
     "efektiv",
     "univerz",
-    "ad hoc",
+    "ad|hoc",
     "techni",
     "prostitu",
     "display",
@@ -361,8 +361,8 @@
     "rock"
   ],
   "CZENGLISH": [
-    "honóris kauzá",
-    "anfán teribl",
+    "honóris|kauzá",
+    "anfán|teribl",
     "kchambek",
     "fotbal",
     "ofsajd",
@@ -410,7 +410,7 @@
     "tytul",
     "efektyv",
     "unyverz",
-    "ad hók",
+    "ad|hók",
     "techny",
     "prostytu",
     "dysplej",
