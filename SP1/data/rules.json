@@ -97,10 +97,11 @@
     }
   },
   "2.8.7.1.2": {
-    "shora": "zhora",
-    "shůry": "zhůry",
-    "shUry": "zhUry",
+    "shor": "zhor",
+    "shůr": "zhůr",
+    "shUr": "zhUr",
     "shluk": "zhluk",
+    "shluc": "zhluc",
     "sh": "sx",
     "|pRes|": "|pRez|",
     "|pQes|": "|pQez|",
