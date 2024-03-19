@@ -87,7 +87,12 @@
       "$|<V>": "$|!<V>"
     }
   },
-  "2.8.7.1": {
+  "2.8.7.1.1": {
+    "symbolic": {
+      "<NPK>R": "<NPK>Q"
+    }
+  },
+  "2.8.7.1.2": {
     "shora": "zhora",
     "shůry": "zhůry",
     "shUry": "zhUry",
@@ -96,7 +101,6 @@
     "|pRes|": "|pRez|",
     "|pQes|": "|pQez|",
     "symbolic": {
-      "<NPK>R": "<NPK>Q",
       "|<NP>|<JK>": "|<NP>*|<JK>",
       "|<NP>|v": "|<NP>*|v",
       "x|<ZPK>": "G|<ZPK>",
@@ -136,7 +140,8 @@
       "<NPK><ZPK>": "<ZPK><ZPK>",
       "<NPK>|<ZPK>": "<ZPK>|<ZPK>",
       "v<NPK>": "f<NPK>",
-      "G|<NPK>": "x|<NPK>"
+      "G|<NPK>": "x|<NPK>",
+      "<NPK>R": "<NPK>Q"
     },
     "*": ""
   },
