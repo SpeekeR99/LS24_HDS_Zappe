@@ -50,19 +50,32 @@ def main(input_path=INPUT_FP, output_path=OUTPUT_FP):
         # Add start and end symbols and make sure the sentence is lower case
         sentence = "|$|" + sentence.lower() + "|$|"
 
-        # Apply all the rules
+        # Apply all the rules:
+        # Spaces, commas, other punctuation and some foreign words are rewritten with "y" instead of "i"
         sentence = apply_rule(sentence, epa, rules, "preprocess")
+        # Special czech characters are rewritten with their phonetic counterparts (no "ch", "dz", "dž" and "y", "ý")
         sentence = apply_rule(sentence, epa, rules, "2.8.3.1")
+        # Special rules for "x", "q" and "w"
         sentence = apply_rule(sentence, epa, rules, "2.8.9.2")
+        # "ch" and "dz", "dž" can now be rewritten, since "x" and "w" were rewritten in the previous step
         sentence = apply_rule(sentence, epa, rules, "2.8.3.2")
+        # Rules for "ě" and other soft czech special characters (also some accents are added)
         sentence = apply_rule(sentence, epa, rules, "2.8.5")
+        # More accents are added (regarding pauses)
         sentence = apply_rule(sentence, epa, rules, "2.8.6")
+        # Special rule for assimilation of "ř" ([R] [Q]), where left context has precedence over right context
         sentence = apply_rule(sentence, epa, rules, "2.8.7.1.1")
+        # Big rule for assimilation (with all the exceptions solved thanks to precedence and order of rules)
         sentence = apply_rule(sentence, epa, rules, "2.8.7.1.2")
+        # Rule for nasal "n" and "m"
         sentence = apply_rule(sentence, epa, rules, "2.8.7.2")
+        # Syllable-building rules for "r", "l" and partially "m"
         sentence = apply_rule(sentence, epa, rules, "2.8.7.3")
+        # Rewriting "y" and "ý" to "i" and "í", because the soft "i"'s already did all their work
         sentence = apply_rule(sentence, epa, rules, "2.8.3.3")
+        # Exceptions and "zští", "žští" rules
         sentence = apply_rule(sentence, epa, rules, "2.8.7.4")
+        # "ou", "au" and "eu" rules together with more accents
         sentence = apply_rule(sentence, epa, rules, "2.8.4")
 
         phntrn.append(sentence)
