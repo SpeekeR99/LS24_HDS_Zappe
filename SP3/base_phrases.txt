@@ -1,0 +1,85 @@
+<pozdrav>
+<den_dekorator>
+<den>
+<den_dekorator> <den>
+v <den>
+v <den_dekorator> <den>
+<kraj>
+v <kraj>
+<nehoda>
+<zacatek>
+bylo v <kraj> <den> <nehoda> s jízdou pod vlivem alkoholu
+byla <nehoda> včera v <kraj> s úmrtím
+kolik <nehoda> bylo v <den> v <kraj> s nedostatečnou pozorností řidiče
+byly <den> v <kraj> <nehoda> s těžkým zraněním
+<nehoda> v <kraj> v <den>
+byly včera v <kraj> <nehoda> s úmrtím
+byly <nehoda> v <den> v <kraj> s jízdou pod vlivem
+byly v <den> v <kraj> <nehoda> s nesprávným způsobem jízdy
+<nehoda> v <den> v <kraj> s nesprávným předjížděním vozidel
+kolik <nehoda> bylo v <kraj> <den> předevčírem
+bylo v <kraj> <den> <nehoda> s nepřizpůsobenou rychlostí
+byla <nehoda> v <den> v <kraj> s úmrtím
+byly v <den> v <kraj> <nehoda> s nedání přednosti v silničním provozu
+kolik <nehoda> bylo v <den> v <kraj> s jinými příčinami
+lehce zraněných <den> v <kraj>
+byly v <den> v <kraj> <nehoda> s nepřizpůsobenou rychlostí
+byly <nehoda> v <den> v <kraj> s nedost
+<nehoda> se v <den> v <kraj>
+kolik <nehoda> bylo v <den> v <kraj> s jízdou pod vlivem alkoholu
+byly v <den> v <kraj> <nehoda> s jízdou pod vlivem alkoholu
+byly v <den> v <kraj> <nehoda> s nesprávným předjížděním
+<nehoda> v <den> v <kraj> minulý týden
+<nehoda> v <kraj> <den>
+byly v <den> v <kraj> <nehoda> s jízdou pod vlivem
+byly v <den> v <kraj> <nehoda> s lehkým zraněním
+<nehoda> v <den> v <kraj> s nedostatečnou pozorností řidiče
+kolik <nehoda> bylo v <den> v <kraj> s nedání přednosti v silničním provozu
+<nehoda> v <kraj> <den> předevčírem
+byly <nehoda> s těžkým zraněním v <den> v <kraj>
+<nehoda> v <den> v <kraj> s jinými příčinami
+kolik <nehoda> bylo v <kraj> v <den>
+kolik <nehoda> se stalo v <den> v <kraj>
+kolik <nehoda> bylo v <den> v <kraj> s nesprávným předjížděním
+<nehoda> v <den> v <kraj> s nedání přednosti v silničním provozu
+kolik <nehoda> bylo v <den> v <kraj> s nedání přednosti v jízdě
+kolik <nehoda> se stalo <den> v <kraj>
+byly v <den> v <kraj> <nehoda>
+kolik <nehoda> bylo v <den> v <kraj>
+<nehoda> včera v <kraj>
+byla v <kraj> <den> <nehoda> s jízdou pod vlivem
+byly v <den> v <kraj> <nehoda> s poškozením majetku
+<nehoda> v <den> v <kraj> s jízdou pod vlivem alkoholu
+byly <nehoda> s lehkým zraněním <den> v <kraj>
+a kolik předevčírem v <kraj>
+bylo v <kraj> <den> <nehoda> s nepřiměřenou rychlostí
+<nehoda> v <den> v <kraj>
+bylo v <kraj> <den> <nehoda> s nesprávným způsobem jízdy
+jaké byly <nehoda> v <den> v <kraj>
+byly v <den> minulý týden v <kraj> <nehoda> s nepřiměřenou rychlostí
+kolik <nehoda> bylo v <den> v <kraj> s nesprávným předjížděním vozidel
+kolik <nehoda> bylo v <den> v <kraj> minulý týden
+byly <nehoda> v <den> v <kraj> s poškozením majetku
+byly v <den> v <kraj> <nehoda> s nedostatečnou pozorností řidiče
+kolik <nehoda> bylo v <den> v <kraj> s nepřiměřenou rychlostí
+<nehoda> v <den> v <kraj> s nepřiměřenou rychlostí
+byly <nehoda> včera v <kraj>
+byly v <kraj> <den> <nehoda> s poškozením majetku
+byly v <kraj> <den> <nehoda> s poruchou vozidla
+bylo v <kraj> <den> <nehoda> s nedáním přednosti
+byly v <kraj> minulý týden <nehoda> s nepřiměřenou rychlostí
+<nehoda> v <den> v <kraj> s nesprávným způsobem jízdy
+<nehoda> se <den> v <kraj>
+byly <nehoda> minulý týden v <kraj> s nepřiměřenou rychlostí
+byly <nehoda> v <den> v <kraj>
+<nehoda> v <den> v <kraj> s nedání přednosti v jízdě
+jaké <nehoda> byly v <den> v <kraj>
+kolik <nehoda> bylo v <den> v <kraj> s nesprávným způsobem jízdy
+kolik lehce zraněných bylo <den> v <kraj>
+kolik <nehoda> bylo včera v <kraj>
+<nehoda> v <den> v <kraj> s nesprávným předjížděním
+byly včera v <kraj> <nehoda>
+a předevčírem v <kraj>
+kolik <nehoda> bylo v <kraj> <den>
+byly <nehoda> s lehkým zraněním v <den> v <kraj>
+<zacatek> <nehoda> v <den> v <kraj>

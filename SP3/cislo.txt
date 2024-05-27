@@ -1,0 +1,508 @@
+jeden
+jedna
+jedno
+dva
+dvě
+tři
+čtyři
+pět
+šest
+sedm
+osm
+devět
+deset
+jedenáct
+dvanáct
+třináct
+čtrnáct
+patnáct
+šestnáct
+sedmnáct
+osmnáct
+devatenáct
+dvacet
+dvacet jedna
+dvacet dva
+dvacet tři
+dvacet čtyři
+dvacet pět
+dvacet šest
+dvacet sedm
+dvacet osm
+dvacet devět
+třicet
+třicet jedna
+třicet dva
+třicet tři
+třicet čtyři
+třicet pět
+třicet šest
+třicet sedm
+třicet osm
+třicet devět
+čtyřicet
+čtyřicet jedna
+čtyřicet dva
+čtyřicet tři
+čtyřicet čtyři
+čtyřicet pět
+čtyřicet šest
+čtyřicet sedm
+čtyřicet osm
+čtyřicet devět
+padesát
+padesát jedna
+padesát dva
+padesát tři
+padesát čtyři
+padesát pět
+padesát šest
+padesát sedm
+padesát osm
+padesát devět
+šedesát
+šedesát jedna
+šedesát dva
+šedesát tři
+šedesát čtyři
+šedesát pět
+šedesát šest
+šedesát sedm
+šedesát osm
+šedesát devět
+sedmdesát
+sedmdesát jedna
+sedmdesát dva
+sedmdesát tři
+sedmdesát čtyři
+sedmdesát pět
+sedmdesát šest
+sedmdesát sedm
+sedmdesát osm
+sedmdesát devět
+osmdesát
+osmdesát jedna
+osmdesát dva
+osmdesát tři
+osmdesát čtyři
+osmdesát pět
+osmdesát šest
+osmdesát sedm
+osmdesát osm
+osmdesát devět
+devadesát
+devadesát jedna
+devadesát dva
+devadesát tři
+devadesát čtyři
+devadesát pět
+devadesát šest
+devadesát sedm
+devadesát osm
+devadesát devět
+první
+prvního
+prvnímu
+prvním
+druhý
+druhého
+druhému
+druhým
+třetí
+třetího
+třetímu
+třetím
+čtvrtý
+čtvrtého
+čtvrtému
+čtvrtým
+pátý
+pátého
+pátému
+pátým
+šestý
+šestého
+šestému
+šestým
+sedmý
+sedmého
+sedmému
+sedmým
+osmý
+osmého
+osmému
+osmým
+devátý
+devátého
+devátému
+devátým
+desátý
+desátého
+desátému
+desátým
+jedenáctý
+jedenáctého
+jedenáctému
+jedenáctým
+dvanáctý
+dvanáctého
+dvanáctému
+dvanáctým
+třináctý
+třináctého
+třináctému
+třináctým
+čtrnáctý
+čtrnáctého
+čtrnáctému
+čtrnáctým
+patnáctý
+patnáctého
+patnáctému
+patnáctým
+šestnáctý
+šestnáctého
+šestnáctému
+šestnáctým
+sedmnáctý
+sedmnáctého
+sedmnáctému
+sedmnáctým
+osmnáctý
+osmnáctého
+osmnáctému
+osmnáctým
+devatenáctý
+devatenáctého
+devatenáctému
+devatenáctým
+dvacátý
+dvacátého
+dvacátému
+dvacátým
+dvacátý první
+dvacátý prvního
+dvacátý prvnímu
+dvacátým prvním
+dvacátý druhý
+dvacátý druhého
+dvacátý druhému
+dvacátým druhým
+dvacátý třetí
+dvacátý třetího
+dvacátý třetímu
+dvacátým třetím
+dvacátý čtvrtý
+dvacátý čtvrtého
+dvacátý čtvrtému
+dvacátým čtvrtým
+dvacátý pátý
+dvacátý pátého
+dvacátý pátému
+dvacátým pátým
+dvacátý šestý
+dvacátý šestého
+dvacátý šestému
+dvacátým šestým
+dvacátý sedmý
+dvacátý sedmého
+dvacátý sedmému
+dvacátým sedmým
+dvacátý osmý
+dvacátý osmnáctého
+dvacátý osmnáctému
+dvacátým osmnáctým
+dvacátý devátý
+dvacátý devatenáctého
+dvacátý devatenáctému
+dvacátým devatenáctým
+třicátý
+třicátého
+třicátému
+třicátým
+třicátý první
+třicátý prvního
+třicátý prvnímu
+třicátým prvním
+třicátý druhý
+třicátý druhého
+třicátý druhému
+třicátým druhým
+třicátý třetí
+třicátý třetího
+třicátý třetímu
+třicátým třetím
+třicátý čtvrtý
+třicátý čtvrtého
+třicátý čtvrtému
+třicátým čtvrtým
+třicátý pátý
+třicátý pátého
+třicátý pátému
+třicátým pátým
+třicátý šestý
+třicátý šestého
+třicátý šestému
+třicátým šestým
+třicátý sedmý
+třicátý sedmého
+třicátý sedmému
+třicátým sedmým
+třicátý osmý
+třicátý osmnáctého
+třicátý osmnáctému
+třicátým osmnáctým
+třicátý devátý
+třicátý devatenáctého
+třicátý devatenáctému
+třicátým devatenáctým
+čtyřicátý
+čtyřicátého
+čtyřicátému
+čtyřicátým
+čtyřicátý první
+čtyřicátý prvního
+čtyřicátý prvnímu
+čtyřicátým prvním
+čtyřicátý druhý
+čtyřicátý druhého
+čtyřicátý druhému
+čtyřicátým druhým
+čtyřicátý třetí
+čtyřicátý třetího
+čtyřicátý třetímu
+čtyřicátým třetím
+čtyřicátý čtvrtý
+čtyřicátý čtvrtého
+čtyřicátý čtvrtému
+čtyřicátým čtvrtým
+čtyřicátý pátý
+čtyřicátý pátého
+čtyřicátý pátému
+čtyřicátým pátým
+čtyřicátý šestý
+čtyřicátý šestého
+čtyřicátý šestému
+čtyřicátým šestým
+čtyřicátý sedmý
+čtyřicátý sedmého
+čtyřicátý sedmému
+čtyřicátým sedmým
+čtyřicátý osmý
+čtyřicátý osmnáctého
+čtyřicátý osmnáctému
+čtyřicátým osmnáctým
+čtyřicátý devátý
+čtyřicátý devatenáctého
+čtyřicátý devatenáctému
+čtyřicátým devatenáctým
+padesátý
+padesátého
+padesátému
+padesátým
+padesátý první
+padesátý prvního
+padesátý prvnímu
+padesátým prvním
+padesátý druhý
+padesátý druhého
+padesátý druhému
+padesátým druhým
+padesátý třetí
+padesátý třetího
+padesátý třetímu
+padesátým třetím
+padesátý čtvrtý
+padesátý čtvrtého
+padesátý čtvrtému
+padesátým čtvrtým
+padesátý pátý
+padesátý pátého
+padesátý pátému
+padesátým pátým
+padesátý šestý
+padesátý šestého
+padesátý šestému
+padesátým šestým
+padesátý sedmý
+padesátý sedmého
+padesátý sedmému
+padesátým sedmým
+padesátý osmý
+padesátý osmnáctého
+padesátý osmnáctému
+padesátým osmnáctým
+padesátý devátý
+padesátý devatenáctého
+padesátý devatenáctému
+padesátým devatenáctým
+šedesátý
+šedesátého
+šedesátému
+šedesátým
+šedesátý první
+šedesátý prvního
+šedesátý prvnímu
+šedesátým prvním
+šedesátý druhý
+šedesátý druhého
+šedesátý druhému
+šedesátým druhým
+šedesátý třetí
+šedesátý třetího
+šedesátý třetímu
+šedesátým třetím
+šedesátý čtvrtý
+šedesátý čtvrtého
+šedesátý čtvrtému
+šedesátým čtvrtým
+šedesátý pátý
+šedesátý pátého
+šedesátý pátému
+šedesátým pátým
+šedesátý šestý
+šedesátý šestého
+šedesátý šestému
+šedesátým šestým
+šedesátý sedmý
+šedesátý sedmého
+šedesátý sedmému
+šedesátým sedmým
+šedesátý osmý
+šedesátý osmnáctého
+šedesátý osmnáctému
+šedesátým osmnáctým
+šedesátý devátý
+šedesátý devatenáctého
+šedesátý devatenáctému
+šedesátým devatenáctým
+sedmdesátý
+sedmdesátého
+sedmdesátému
+sedmdesátým
+sedmdesátý první
+sedmdesátý prvního
+sedmdesátý prvnímu
+sedmdesátým prvním
+sedmdesátý druhý
+sedmdesátý druhého
+sedmdesátý druhému
+sedmdesátým druhým
+sedmdesátý třetí
+sedmdesátý třetího
+sedmdesátý třetímu
+sedmdesátým třetím
+sedmdesátý čtvrtý
+sedmdesátý čtvrtého
+sedmdesátý čtvrtému
+sedmdesátým čtvrtým
+sedmdesátý pátý
+sedmdesátý pátého
+sedmdesátý pátému
+sedmdesátým pátým
+sedmdesátý šestý
+sedmdesátý šestého
+sedmdesátý šestému
+sedmdesátým šestým
+sedmdesátý sedmý
+sedmdesátý sedmého
+sedmdesátý sedmému
+sedmdesátým sedmým
+sedmdesátý osmý
+sedmdesátý osmnáctého
+sedmdesátý osmnáctému
+sedmdesátým osmnáctým
+sedmdesátý devátý
+sedmdesátý devatenáctého
+sedmdesátý devatenáctému
+sedmdesátým devatenáctým
+osmdesátý
+osmdesátého
+osmdesátému
+osmdesátým
+osmdesátý první
+osmdesátý prvního
+osmdesátý prvnímu
+osmdesátým prvním
+osmdesátý druhý
+osmdesátý druhého
+osmdesátý druhému
+osmdesátým druhým
+osmdesátý třetí
+osmdesátý třetího
+osmdesátý třetímu
+osmdesátým třetím
+osmdesátý čtvrtý
+osmdesátý čtvrtého
+osmdesátý čtvrtému
+osmdesátým čtvrtým
+osmdesátý pátý
+osmdesátý pátého
+osmdesátý pátému
+osmdesátým pátým
+osmdesátý šestý
+osmdesátý šestého
+osmdesátý šestému
+osmdesátým šestým
+osmdesátý sedmý
+osmdesátý sedmého
+osmdesátý sedmému
+osmdesátým sedmým
+osmdesátý osmý
+osmdesátý osmnáctého
+osmdesátý osmnáctému
+osmdesátým osmnáctým
+osmdesátý devátý
+osmdesátý devatenáctého
+osmdesátý devatenáctému
+osmdesátým devatenáctým
+devadesátý
+devadesátého
+devadesátému
+devadesátým
+devadesátý první
+devadesátý prvního
+devadesátý prvnímu
+devadesátým prvním
+devadesátý druhý
+devadesátý druhého
+devadesátý druhému
+devadesátým druhým
+devadesátý třetí
+devadesátý třetího
+devadesátý třetímu
+devadesátým třetím
+devadesátý čtvrtý
+devadesátý čtvrtého
+devadesátý čtvrtému
+devadesátým čtvrtým
+devadesátý pátý
+devadesátý pátého
+devadesátý pátému
+devadesátým pátým
+devadesátý šestý
+devadesátý šestého
+devadesátý šestému
+devadesátým šestým
+devadesátý sedmý
+devadesátý sedmého
+devadesátý sedmému
+devadesátým sedmým
+devadesátý osmý
+devadesátý osmnáctého
+devadesátý osmnáctému
+devadesátým osmnáctým
+devadesátý devátý
+devadesátý devatenáctého
+devadesátý devatenáctému
+devadesátým devatenáctým
+sto
+stý
+stá
+sté
+set
+stého
+stému
+tisíc
+tisíce
+tisíci
